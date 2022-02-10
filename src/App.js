@@ -1,18 +1,14 @@
 import React from "react";
-import Navbar from "./components/navbar.js";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Navbar from "./components/Navbar";
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
+import Sidebar from "./components/Sidebar";
 function App() {
   return (
-    <>
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path = '/' exact />
-      </Routes>
+      <Sidebar/>
+      <Navbar/>
     </Router>
-
-    </>
   );
 }
 
