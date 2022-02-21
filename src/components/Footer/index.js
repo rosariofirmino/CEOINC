@@ -1,24 +1,37 @@
 import React from 'react'
-import {Button} from '../button'
+import {ButtonFooter} from '../button'
+import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
+import {FooterBtn, FooterBtnItem, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkItems, FooterLink, FooterLinkTitle, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
 
-const Footer = () => {
+const FooterSection = () => {
   return (
     <FooterContainer>
         <FooterWrap>
-            <FooterLinkesContainer>
+            <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>CEO INC</FooterLinkTitle>
                         <FooterLink to="/jobs"> Find Jobs </FooterLink>
                     </FooterLinkItems>
-                    <FooterLinkBtnWrap>
-                        <Button>Find Jobs</Button>
-                    </FooterLinkBtnWrap>
+                    <FooterBtnWrapper>
+                        <FooterBtn>
+                            <FooterBtnItem>
+                                <FaTwitter/>
+                            </FooterBtnItem>
+                            <FooterBtnItem>
+                                <FaFacebookF/>
+                            </FooterBtnItem>
+                            <FooterBtnItem>
+                                <FaLinkedin/>
+                            </FooterBtnItem>
+                        </FooterBtn>
+                        <ButtonFooter>Find Jobs</ButtonFooter>
+                    </FooterBtnWrapper>
                 </FooterLinksWrapper>
-            </FooterLinkesContainer>
+            </FooterLinksContainer>
         </FooterWrap>
     </FooterContainer>
   )
 }
 
-export default Footer
+export default FooterSection

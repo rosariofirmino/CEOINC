@@ -40,11 +40,11 @@ export const HeroBg = styled.div`
     height: 100%;
     overflow: hidden;
 `
-export const PicBg = styled.img`
+export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
-    opject-fit: cover;
+    object-fit: cover;
     background-image: #fff;
 `
 export const HeroContent = styled.div`

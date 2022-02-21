@@ -92,9 +92,19 @@ export const NavLinks = styled(LinkS)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
+    color: #fff;
 
     @media screen and (max-width: 768px){
-        display: none;
+        padding-right: 40px;
+    }
+`
+
+export const NavBtnItem = styled.div`
+    padding-left: 10px;
+    font-size: 1.4rem;
+    &:hover {
+        font-size: 1.6rem;
+        transition: all 0.2s ease-in-out;
     }
 `
 

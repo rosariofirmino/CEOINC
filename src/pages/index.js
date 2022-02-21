@@ -3,6 +3,7 @@ import HeroSection from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/infoSection'
+import FooterSection from '../components/Footer'
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
         <Navbar toggle={toggle}/>
         <HeroSection/>
         <InfoSection/>
-
+        <FooterSection/>
     </>
   )
 }

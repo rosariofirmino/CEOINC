@@ -1,6 +1,6 @@
 import React from 'react'
-import {FaBars} from 'react-icons/fa'
-import{Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavLinks,NavMenu,NavBtn,NavBtnLink} from './NavbarElements'
+import {FaBars, FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
+import{Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavLinks,NavMenu,NavBtn,NavBtnLink, NavBtnItem} from './NavbarElements'
 
 
 
@@ -43,7 +43,15 @@ const Navbar = ({toggle}) => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to='/jobboard'>Find Jobs</NavBtnLink>
+                    <NavBtnItem>
+                        <FaTwitter/>
+                    </NavBtnItem>
+                    <NavBtnItem>
+                        <FaFacebookF/>
+                    </NavBtnItem>
+                    <NavBtnItem>
+                        <FaLinkedin/>
+                    </NavBtnItem>
                 </NavBtn>
             </NavbarContainer>
         </Nav>
