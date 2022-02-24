@@ -1,32 +1,27 @@
 import React from 'react'
+import imag from '../../images/recruit.svg'
 import {Button} from '../button'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
 
-const InfoSection = () => {
+const InfoSection = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
   return (
     <>
-    <InfoContainer>
+    <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-            <InfoRow>
+            <InfoRow imgStart={imgStart}>
                 <Column1>
                 <TextWrapper>
-                    <TopLine>
-                        TopLine
-                    </TopLine>
-                    <Heading>
-                        Heading
+                    <Heading lightText={lightText}>
+                        {headLine}
                     </Heading>
-                    <Subtitle>
-                        Subtitle
+                    <Subtitle darkText={darkText}>
+                        {description}
                     </Subtitle>
-                    <BtnWrap>
-                        <Button to='home'>Button</Button>
-                    </BtnWrap>
                 </TextWrapper>
                 </Column1>
                 <Column2>
                 <ImgWrap>
-                <Img/>
+                    <Img src={img} alt={alt}/>
                 </ImgWrap>
                 </Column2>
             </InfoRow>

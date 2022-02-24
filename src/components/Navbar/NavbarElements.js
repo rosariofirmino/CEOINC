@@ -4,7 +4,7 @@ import { Link as LinkS} from 'react-scroll'
 
 
 export const Nav = styled.nav`
-    background: transparent;
+    background: rgba(103,104,109,0);
     height: 80px;
     margin-top: -80px;
     display: flex;
@@ -81,11 +81,12 @@ export const NavLinks = styled(LinkS)`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #3EC2F3
+        border-bottom: 3px solid #3EC2F3;
     }
     &:hover {
-        border-bottom: 3px solid #3EC2F3
+        border-bottom: 3px solid #3EC2F3;
     }
+
 
 `
 

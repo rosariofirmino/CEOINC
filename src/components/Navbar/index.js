@@ -17,27 +17,27 @@ const Navbar = ({toggle}) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="expertise">
-                            Our Expertise
+                        <NavLinks to="expertise" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
+                            Expertise
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="about">
+                        <NavLinks to="about" smooth={true} duration={500} spy={true} exact="true">
                             About
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="recognitions">
+                        <NavLinks to="recognitions" smooth={true} duration={500} spy={true} exact="true">
                             Recognitions
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="spotlight">
+                        <NavLinks to="spotlight" smooth={true} duration={500} spy={true} exact="true">
                             Spotlight
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="contact">
+                        <NavLinks to="contact" smooth={true} duration={500} spy={true} exact="true">
                             Contact
                         </NavLinks>
                     </NavItem>
