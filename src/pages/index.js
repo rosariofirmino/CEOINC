@@ -5,7 +5,8 @@ import Sidebar from '../components/Sidebar'
 import InfoSection from '../components/infoSection'
 import FooterSection from '../components/Footer'
 import About from '../components/About'
-import { homeObjOne } from '../components/infoSection/data'
+import { SliderData, SecondSliderData } from '../components/infoSection/SliderData'
+import { homeObjOne, homeObjTwo } from '../components/infoSection/data'
 
 
 const Home = () => {
@@ -20,8 +21,9 @@ const Home = () => {
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
         <HeroSection/>
-        <InfoSection{...homeObjOne}/>
+        <InfoSection{...homeObjOne}slides={SliderData}/>
         <About/>
+        <InfoSection{...homeObjTwo}slides={SecondSliderData}/>
         <FooterSection/>
     </>
   )

@@ -13,3 +13,19 @@ export  const homeObjOne = {
     primary: true,
     darkText: true
 }
+export  const homeObjTwo = {
+    id: 'spotlight',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: false,
+    topLine: '',
+    headLine: 'spotloght',
+    description: '"Delivering top talent nationally for over 27 years"',
+    imgStart: true,
+    img: require('../../images/team.png'),
+    alt: 'Car',
+    dark: true,
+    primary: true,
+    darkText: true
+}
+

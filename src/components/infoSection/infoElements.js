@@ -4,7 +4,7 @@ export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#3EC2F3' : '#fff')};
 
-    @medi screen and (max-width:768px){
+    @media screen and (max-width:768px){
         padding: 100px 0;
     }
 `
@@ -63,7 +63,7 @@ export const Heading = styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color ${({lightText}) => (lightText ? '#3EC2F3' : '#67686D')};
+    color: ${({lightText}) => (lightText ? '#3EC2F3' : '#67686D')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -73,9 +73,11 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
+    font-family: 'Nunito', sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#67686D' : '#3EC2F3')};
+    
 `
 
 export const BtnWrap = styled.div`

@@ -27,13 +27,13 @@ const Navbar = ({toggle}) => {
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="recognitions" smooth={true} duration={500} spy={true} exact="true">
-                            Recognitions
+                        <NavLinks to="spotlight" smooth={true} duration={500} spy={true} exact="true">
+                            Spotlight
                         </NavLinks>
                     </NavItem>
                     <NavItem>
-                        <NavLinks to="spotlight" smooth={true} duration={500} spy={true} exact="true">
-                            Spotlight
+                        <NavLinks to="team" smooth={true} duration={500} spy={true} exact="true">
+                            Team
                         </NavLinks>
                     </NavItem>
                     <NavItem>
