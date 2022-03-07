@@ -89,6 +89,22 @@ export const NavLinks = styled(LinkS)`
 
 
 `
+export const NavBgS = styled(LinkS)`
+    background: rgba(62, 194, 243, 0);
+    height: 80px;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    &.active {
+        background: rgba(62, 194, 243, 1);
+        
+    }
+`
 
 export const NavBtn = styled.nav`
     display: flex;
@@ -127,4 +143,8 @@ export const NavBtnLink = styled(LinkR)`
         background: #fff;
         color: #3EC2F3;
     }
+`
+
+export const NavLogoImg = styled.img`
+    height: 45px;
 `

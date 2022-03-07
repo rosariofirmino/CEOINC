@@ -53,3 +53,7 @@
     transition-duration: 1s;
     transform: scale(1.08);
   }
+  a:visited { 
+    text-decoration: none; 
+    color: white; 
+   }

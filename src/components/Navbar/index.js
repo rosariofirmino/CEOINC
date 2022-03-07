@@ -1,16 +1,16 @@
 import React from 'react'
+import Icon1 from '../../images/ceoinclogo.png'
 import {FaBars, FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
-import{Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavLinks,NavMenu,NavBtn,NavBtnLink, NavBtnItem} from './NavbarElements'
-
+import{NavLogoImg, Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavLinks,NavMenu,NavBtn,NavBtnLink, NavBtnItem} from './NavbarElements'
 
 
 const Navbar = ({toggle}) => {
   return (
     <>
-        <Nav>
+        <Nav classname='navbar'>
             <NavbarContainer>
                 <NavLogo to='/'>
-                    logo
+                    <NavLogoImg src={Icon1}/>
                 </NavLogo>
                 <MobileIcon onClick={toggle}>
                     <FaBars />
@@ -44,13 +44,13 @@ const Navbar = ({toggle}) => {
                 </NavMenu>
                 <NavBtn>
                     <NavBtnItem>
-                        <FaTwitter/>
+                        <a href="https://twitter.com/ceoinc1"><FaTwitter/></a>
                     </NavBtnItem>
                     <NavBtnItem>
-                        <FaFacebookF/>
+                        <a href="https://www.facebook.com/CEOINC1/"><FaFacebookF/></a>
                     </NavBtnItem>
                     <NavBtnItem>
-                        <FaLinkedin/>
+                        <a href="https://www.linkedin.com/company/ceo-inc/"><FaLinkedin/></a>
                     </NavBtnItem>
                 </NavBtn>
             </NavbarContainer>

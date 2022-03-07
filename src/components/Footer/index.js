@@ -11,7 +11,6 @@ const FooterSection = () => {
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLinkTitle>CEO INC</FooterLinkTitle>
-                        <FooterLink to="/jobs"> Find Jobs </FooterLink>
                     </FooterLinkItems>
                     <FooterBtnWrapper>
                         <FooterBtn>
