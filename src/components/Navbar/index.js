@@ -1,13 +1,25 @@
-import React from 'react'
 import Icon1 from '../../images/ceoinclogo.png'
+import React, { useState } from 'react'
+
 import {FaBars, FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
 import{NavLogoImg, Nav,NavbarContainer,NavLogo,MobileIcon,NavItem,NavLinks,NavMenu,NavBtn,NavBtnLink, NavBtnItem} from './NavbarElements'
 
 
-const Navbar = ({toggle}) => {
+function Navbar ({toggle}) {
+    const [navbar,setNavbar] = useState(false);
+
+    const changeBg = () => {
+        if (window.scrollY >=1000){
+            setNavbar (true);
+        }else{
+            setNavbar (false);
+        }
+    }
+
+    window.addEventListener('scroll', changeBg);
   return (
     <>
-        <Nav classname='navbar'>
+        <Nav className={navbar ? 'active' : ''}>
             <NavbarContainer>
                 <NavLogo to='/'>
                     <NavLogoImg src={Icon1}/>

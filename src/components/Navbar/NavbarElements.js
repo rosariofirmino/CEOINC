@@ -14,9 +14,14 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 10;
-
+    active: true;
     @media screen and (max-width: 960px){
         transition: 0.8s all ease;
+    }
+    &.active{
+        background: rgba(142, 142, 150, 1);
+        transition: all 0.2s ease-in-out;
+
     }
 `
 export const NavbarContainer = styled.div`

@@ -7,7 +7,8 @@ import FooterSection from '../components/Footer'
 import About from '../components/About'
 import { SliderData, SecondSliderData } from '../components/infoSection/SliderData'
 import { homeObjOne, homeObjTwo } from '../components/infoSection/data'
-
+import { Background } from './BgElements'
+import BG from '../images/ceobg.png'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,16 +16,28 @@ const Home = () => {
   const toggle = () => {
       setIsOpen(!isOpen)
   }
+  const [BG,setBG] = useState(false);
 
+  const changeBg = () => {
+      if (window.scrollY >=1000){
+          setNavbar (true);
+      }else{
+          setNavbar (false);
+      }
+  }
+
+  window.addEventListener('scroll', changeBg);
   return (
-    <>
+    <> 
         <Sidebar isOpen={isOpen} toggle={toggle}/>
         <Navbar toggle={toggle}/>
-        <HeroSection id="about"/>
+        <HeroSection />
+        <Background src={BG}/>
         <InfoSection{...homeObjOne}slides={SliderData}/>
         <About/>
         <InfoSection{...homeObjTwo}slides={SecondSliderData}/>
         <FooterSection/>
+        
     </>
   )
 }
