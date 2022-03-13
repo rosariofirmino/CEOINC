@@ -38,7 +38,6 @@ export const AboutWrapper = styled.div`
 `
 
 export const AboutCard = styled.div`
-    background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -46,7 +45,6 @@ export const AboutCard = styled.div`
     border-radius: 10px;
     height: 450px;
     padding: 30px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2 ease-in-out;
 
 
@@ -57,9 +55,10 @@ export const AboutCard = styled.div`
     }
 `
 
-export const AboutIcon = styled.img`
+export const AboutIcon = styled.svg`
     height: 160px;
     margin-bottom: 10px;
+    zIndex: 1;
 `
 
 export const AboutH1 = styled.h1`
@@ -73,13 +72,13 @@ export const AboutH1 = styled.h1`
 `
 
 export const AboutH2 = styled.h2`
-    color: #3EC2F3;
+    color: #fff;
     font-size: 1.7rem;
     margin-bottom: 10px;
 `
 
 export const AboutP = styled.p`
-    color: #67686D;
+    color: #fff;
     font-size: 1rem;
     font-family: 'Nunito', sans-serif;
     text-align: center;

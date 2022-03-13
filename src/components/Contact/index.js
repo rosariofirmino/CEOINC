@@ -1,10 +1,10 @@
 import React from 'react'
 import {ButtonFooter} from '../button'
-import { ContactCard, ContactNum, ContactH3, ContactH1, ContactContainer, ContactH2, ContactP, ContactWrapper} from './ContactElements'
+import { ContactCard, ContactHr, ContactNum, ContactH3, ContactH1, ContactContainer, ContactH2, ContactP, ContactWrapper} from './ContactElements'
 
 const Contact = () => {
   return (
-    <ContactContainer id="contact">
+    <ContactContainer id= "contact">
         <ContactH1>Contact Us</ContactH1>
         <ContactH3>"Centered on People"</ContactH3>
         <ContactNum>888-242-1755</ContactNum>

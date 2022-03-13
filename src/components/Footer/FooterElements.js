@@ -14,7 +14,10 @@ export const FooterWrap = styled.div`
     max-width: 1100px;
     margin: 0 auto;
 `
-
+export const FooterLogo = styled.img`
+    height: 50px;
+    margin-bottom: 10px;
+`
 export const FooterLinksContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -36,8 +39,6 @@ export const FooterLinkItems = styled.div`
     flex-direction: column;
     align-items: flex-start;
     margin: 16px;
-    background-color: #fff;
-    border-radius: 50px;
     text-align: left;
     width: 200px;
     box-sizing: border-box;

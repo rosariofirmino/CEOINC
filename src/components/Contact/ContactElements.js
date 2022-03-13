@@ -85,3 +85,8 @@ export const ContactP = styled.p`
     font-family: 'Nunito', sans-serif;
     text-align: center;
 `
+export const ContactHr = styled.hr`
+    height: 5px;
+    color: #fff;
+    background-color: #fff;
+`

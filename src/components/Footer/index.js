@@ -1,7 +1,9 @@
 import React from 'react'
+
 import {ButtonFooter} from '../button'
+import FL from '../../images/ceofooter.png'
 import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
-import {FooterBtn, FooterBtnItem, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkItems, FooterLink, FooterLinkTitle, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
+import {FooterBtn, FooterLogo, FooterBtnItem, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkItems, FooterLink, FooterLinkTitle, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
 
 const FooterSection = () => {
   return (
@@ -10,7 +12,7 @@ const FooterSection = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
-                        <FooterLinkTitle>CEO INC</FooterLinkTitle>
+                        <FooterLogo src={FL}/>
                     </FooterLinkItems>
                     <FooterBtnWrapper>
                         <FooterBtn>
