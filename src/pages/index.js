@@ -6,6 +6,7 @@ import InfoSection from '../components/infoSection'
 import FooterSection from '../components/Footer'
 import Contact from '../components/Contact'
 import About from '../components/About'
+import Team from '../components/Team'
 import { SliderData, SecondSliderData } from '../components/infoSection/SliderData'
 import { homeObjOne, homeObjTwo } from '../components/infoSection/data'
 import { Background } from './BgElements'
@@ -28,6 +29,7 @@ const Home = () => {
         <InfoSection{...homeObjOne}slides={SliderData}/>
         <About/>
         <InfoSection{...homeObjTwo}slides={SecondSliderData}/>
+        <Team/>
         <Contact />
         <FooterSection/>
         
