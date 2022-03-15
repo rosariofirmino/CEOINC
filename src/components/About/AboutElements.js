@@ -22,24 +22,42 @@ export const AboutWrapper = styled.div`
     max-width: 1600px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1600px){
-        grid-template-columns: 1fr 1fr;
-    }
-
     @media screen and (max-width: 950px){
-        grid-template-columns: 1fr;
         padding: 0 20px;
     }
 `
 
 export const AboutCard = styled.div`
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    transition: all 0.2 ease-in-out;
+
+
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.2 ease-in-out;
+        cursor: pointer;
+    }
+`
+export const AboutCardInfo = styled.div`
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+`
+export const AboutCardR = styled.div`
+    display: flex;
+    flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
@@ -55,7 +73,7 @@ export const AboutCard = styled.div`
     }
 `
 
-export const AboutIcon = styled.svg`
+export const AboutIcon = styled.img`
     height: 160px;
     margin-bottom: 10px;
     zIndex: 1;
@@ -80,6 +98,7 @@ export const AboutH2 = styled.h2`
 export const AboutP = styled.p`
     color: #fff;
     font-size: 1rem;
+    width: 640px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
 `

@@ -9,7 +9,7 @@ function Navbar ({toggle}) {
     const [navbar,setNavbar] = useState(false);
 
     const changeBg = () => {
-        if (window.scrollY >=1000){
+        if (window.scrollY >= 920){
             setNavbar (true);
         }else{
             setNavbar (false);

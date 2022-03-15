@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 
 export const Background = styled.img`
-    width: 2000px;
+    width: 3000px;
     position:absolute;
     justify-content: center;
     z-index:-99999;
-    margin-bottom: 10px;
-    opacity: 50%;
+    margin-top: -3100px;
+    margin-left: -400px;
+
+    opacity: 10%;
 `
