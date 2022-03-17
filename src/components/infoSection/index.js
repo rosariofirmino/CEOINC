@@ -1,11 +1,11 @@
 import imag from '../../images/recruit.svg'
 import {Button} from '../button'
 import React, { useState } from 'react';
-import { SliderData } from './SliderData';
+import { SliderData, SecondSliderData } from './SliderData';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
 
-const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt}) => {
+const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt,big, script}) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
   
@@ -27,10 +27,10 @@ const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine
             <InfoRow imgStart={imgStart}>
                 <Column1>
                 <TextWrapper>
-                    <Heading lightText={lightText}>
+                    <Heading lightText={lightText} >
                         {headLine}
                     </Heading>
-                    <Subtitle darkText={darkText}>
+                    <Subtitle darkText={darkText} script={script} big={big}>
                         {description}
                     </Subtitle>
                 </TextWrapper>
@@ -38,9 +38,9 @@ const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine
                 <Column2>
                 <ImgWrap>
                 <section className='slider'>
-                <BsChevronLeft className='left-arrow' onClick={prevSlide} />
-                <BsChevronRight className='right-arrow' onClick={nextSlide} />
-                {SliderData.map((slide, index) => {
+                <BsChevronLeft className='left-arrow' onClick={prevSlide} color='#3EC2F3' />
+                <BsChevronRight className='right-arrow' onClick={nextSlide} color='#3EC2F3' />
+                {slides.map((slide, index) => {
                     return (
                     <div
                         className={index === current ? 'slide active' : 'slide'}

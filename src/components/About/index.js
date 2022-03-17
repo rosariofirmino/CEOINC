@@ -3,7 +3,7 @@ import Icon1 from '../../images/Who We Are.png'
 import Icon2 from '../../images/What We Do.png'
 import Icon3 from '../../images/Our Approach.png'
 
-import { AboutCard,AboutCardR, AboutCardInfo, AboutH1, AboutContainer, AboutWrapper, AboutIcon, AboutH2, AboutP } from './AboutElements'
+import { AboutCard, AboutH2R, AboutCardR, AboutPR, AboutCardInfo, AboutH1, AboutContainer, AboutWrapper, AboutIcon, AboutH2, AboutP } from './AboutElements'
 
 const About = () => {
   return (
@@ -19,8 +19,8 @@ const About = () => {
             </AboutCard>
             <AboutCardR>
                 <AboutCardInfo>
-                    <AboutH2>What We Do</AboutH2>
-                    <AboutP>With industry knowledge and manufacturing expertise in plastics, composites, chemicals, and textiles, our staff finds the right talent for companies seeking to hire engineers, executive-level sales, and operational management talent within each industry.</AboutP>
+                    <AboutH2R>What We Do</AboutH2R>
+                    <AboutPR>With industry knowledge and manufacturing expertise in plastics, composites, chemicals, and textiles, our staff finds the right talent for companies seeking to hire engineers, executive-level sales, and operational management talent within each industry.</AboutPR>
                 </AboutCardInfo>
                 <AboutIcon src={Icon2}/>
             </AboutCardR>

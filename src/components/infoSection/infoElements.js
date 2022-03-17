@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    background: ${({lightBg}) => (lightBg ? 'rgba(62, 194, 243, 1);' : 'rgba(62, 194, 243, 0);')};
-
+    background: ${({lightBg}) => (lightBg ? '#fff' : 'rgba(62, 194, 243, 0);')};
+    border-radius: 50px;
+    margin: 50px;
+    display: flex;
     @media screen and (max-width:768px){
         padding: 100px 0;
     }
@@ -10,13 +12,13 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display:grid;
     z-index: 1;
-    height: 860px;
+    height: 500px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: center;
+    justify-content: right;
 `
 
 export const InfoRow = styled.div`
@@ -33,10 +35,12 @@ export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    justify-content: right;
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
+    margin-top: -150px;
     padding: 0 15px;
     grid-area: col2;
 `
@@ -44,7 +48,7 @@ export const Column2 = styled.div`
 export const TextWrapper = styled.div`
     max-width: 540px;
     padding-top: 0;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 `
 
 export const TopLine = styled.p`
@@ -71,9 +75,9 @@ export const Heading = styled.h1`
 
 export const Subtitle = styled.p`
     max-width: 440px;
-    margin-bottom: 35px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: ${({script})=> (script ? "'Vollkorn', serif;" : "'Nunito', sans-serif")};
+    font-size: ${({big})=> (big ? '35px' : '18px')};
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#67686D' : '#3EC2F3')};
     

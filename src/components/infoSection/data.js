@@ -3,6 +3,8 @@ export  const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: false,
+    script: false,
+    big: false,
     topLine: '',
     headLine: 'Our Expertise',
     description: 'CEO Inc. is an award-winning,full-service recruitment and staffing firm, that for over 27 years has specialized in direct hire placement for senior-level sales, operational and management positions for plastics, composites, textiles and specialty chemical companies nationwide.',
@@ -15,9 +17,11 @@ export  const homeObjOne = {
 }
 export  const homeObjTwo = {
     id: 'spotlight',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: false,
+    script: true,
+    big: true,
     topLine: '',
     headLine: 'spotloght',
     description: '"Delivering top talent nationally for over 27 years"',
