@@ -3,18 +3,18 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
     height: 1600px;
     border-radius: 50px;
-    margin: 50px;
+    margin: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #67686D;
+    background: #8e8e95;
 
     @media screen and (max-width:1600px) {
         height: 1500px;
     }
-    @media screen and (max-width:950px) {
-        height: 1700px;
+    @media screen and (max-width:1300px) {
+        height: 1900px;
     }
 `
 
@@ -25,9 +25,9 @@ export const AboutWrapper = styled.div`
     grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding: 0 50px;
+    padding:;
 
-    @media screen and (max-width: 950px){
+    @media screen and (max-width: 1300px){
         padding: 0 20px;
     }
 `
@@ -40,9 +40,8 @@ export const AboutCard = styled.div`
     border-radius: 10px;
     padding: 30px;
     transition: all 0.2 ease-in-out;
-    @media screen and (max-width:1600px) {
-    }
-    @media screen and (max-width:950px) {
+    
+    @media screen and (max-width:1300px) {
         flex-direction: column;
     }
 `
@@ -51,6 +50,12 @@ export const AboutCardInfo = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: left;
+    padding-right: 55px;
+    padding-left: 55px;
+    @media screen and (max-width:1300px) {
+        padding-right: 55px;
+        padding-left: 55px; 
+    }
 
 `
 export const AboutCardR = styled.div`
@@ -62,20 +67,61 @@ export const AboutCardR = styled.div`
     height: 450px;
     padding: 30px;
     transition: all 0.2 ease-in-out;
-
+    @media screen and (max-width:1300px) {
+    }
+    @media screen and (max-width:1300px) {
+        flex-direction: column;
+    }
 `
 
 export const AboutIcon = styled.img`
     height: 250px;
     margin-bottom: 10px;
-    zIndex: 1;
+    z-index: 2;
+    padding-right: 80px;
     &:hover{
         transform: scale(1.02);
         transition: all 0.5s ease-in-out;
         cursor: pointer;
     }
 `
+export const AboutIconL = styled.img`
+    height: 350px;
+    margin-bottom: 10px;
+    z-index: 2;
+    padding-right: 80px;
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
+    }
+`
+export const AboutIcon2 = styled.img`
+    height: 240px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    margin-left: -405px;
+    z-index: 1;
+    padding-right: 80px;
 
+
+    @media screen and (max-width: 1300px){
+        margin-top: -240px;
+        margin-left: -50px;
+    }
+`
+export const AboutIcon2L = styled.img`
+    height: 340px;
+    margin-bottom: 10px;
+    margin-top: -20px;
+    margin-right: -200px;
+    z-index: 1;
+
+    @media screen and (max-width: 1300px){
+        margin-top: -240px;
+        margin-left: -200px;
+    }
+`
 export const AboutH1 = styled.h1`
     justify-content: left;
     font-size: 3rem;
@@ -95,7 +141,7 @@ export const AboutH2 = styled.h2`
 `
 export const AboutH2R = styled.h2`
     color: #fff;
-    text-align: right;
+    text-align: left;
     font-size: 1.7rem;
     margin-bottom: 10px;
 `
@@ -103,14 +149,14 @@ export const AboutH2R = styled.h2`
 export const AboutP = styled.p`
     color: #fff;
     font-size: 1rem;
-    width: 640px;
+    width: 400px;
     font-family: 'Nunito', sans-serif;
     text-align: left;
 `
 export const AboutPR = styled.p`
     color: #fff;
     font-size: 1rem;
-    width: 640px;
+    width: 400px;
     font-family: 'Nunito', sans-serif;
-    text-align: right;
+    text-align: left;
 `

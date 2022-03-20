@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#fff' : 'rgba(62, 194, 243, 0);')};
     border-radius: 50px;
-    margin: 50px;
+    margin: 150px;
     display: flex;
     @media screen and (max-width:768px){
         padding: 100px 0;
@@ -60,6 +60,9 @@ export const TopLine = styled.p`
     text-transform: uppercase;
     margin-bottom: 16px;
 `
+export const InfoImg = styled.img`
+    height: ${({isthere}) => (isthere ? '100px' : '0px')};
+`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
@@ -78,7 +81,7 @@ export const Subtitle = styled.p`
     margin-bottom: 20px;
     font-family: ${({script})=> (script ? "'Vollkorn', serif;" : "'Nunito', sans-serif")};
     font-size: ${({big})=> (big ? '35px' : '18px')};
-    line-height: 24px;
+    line-height: ${({short})=> (short ? '24px' : '40px')};
     color: ${({darkText}) => (darkText ? '#67686D' : '#3EC2F3')};
     
 `

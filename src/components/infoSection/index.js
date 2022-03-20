@@ -1,11 +1,12 @@
-import imag from '../../images/recruit.svg'
+import imag from '../../images/teamImages/1x/Asset 1.png'
+
 import {Button} from '../button'
 import React, { useState } from 'react';
 import { SliderData, SecondSliderData } from './SliderData';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
+import { InfoImg, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
 
-const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt,big, script}) => {
+const InfoSection = ({short, slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt,big, script, isthere}) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
   
@@ -30,7 +31,8 @@ const InfoSection = ({slides,lightBg, id, imgStart, topLine, lightText, headLine
                     <Heading lightText={lightText} >
                         {headLine}
                     </Heading>
-                    <Subtitle darkText={darkText} script={script} big={big}>
+                    <InfoImg src={imag} isthere={isthere}/>
+                    <Subtitle darkText={darkText} script={script} big={big} short={short}>
                         {description}
                     </Subtitle>
                 </TextWrapper>

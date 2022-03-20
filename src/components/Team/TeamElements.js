@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const TeamContainer = styled.div`
     height: 600px;
     border-radius: 50px;
-    margin: 50px;
+    margin: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;

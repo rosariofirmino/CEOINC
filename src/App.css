@@ -6,9 +6,12 @@
     letter-spacing: 2px;
     font-family: 'Bebas Neue', cursive;
 }
+.bg{
+  overflow-x: hidden;
+}
 .slider {
     position: relative;
-    height: 100vh;
+    height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,4 +56,14 @@
   a:visited { 
     text-decoration: none; 
     color: white; 
+   }
+   body{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+   .full-size{
+     height:100%;
+     width:100%;
+     overflow:hidden; /* or overflow:auto; if you want scrollbars */
    }

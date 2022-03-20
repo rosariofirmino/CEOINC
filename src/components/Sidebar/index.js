@@ -11,16 +11,16 @@ const Sidebar = ({isOpen, toggle}) => {
         <SideBarWrapper>
             <SideBarMenu>
                 <SideBarLink to="expertise" onClick={toggle}>
-                    Our Expertise
+                    Expertise
                 </SideBarLink>
                 <SideBarLink to="about" onClick={toggle}>
                     About
                 </SideBarLink>
-                <SideBarLink to="recognitions" onClick={toggle}>
-                    Recognitions
-                </SideBarLink>
                 <SideBarLink to="spotlight" onClick={toggle}>
                     Spotlight
+                </SideBarLink>
+                <SideBarLink to="team" onClick={toggle}>
+                    Team
                 </SideBarLink>
                 <SideBarLink to="contact" onClick={toggle}>
                     Contact
