@@ -1,6 +1,6 @@
 export  const homeObjOne = {
     id: 'expertise',
-    lightBg: false,
+    lightBg: true,
     lightText: true,
     lightTextDesc: false,
     script: false,
@@ -15,14 +15,16 @@ export  const homeObjOne = {
     dark: true,
     primary: true,
     darkText: true,
-    short: true
+    short: true,
+    slides1: true,
+    isimg: false
 }
 export  const homeObjTwo = {
     id: 'spotlight',
     lightBg: true,
     lightText: true,
     lightTextDesc: false,
-    script: true,
+    script: false,
     big: true,
     topLine: '',
     headLine: 'spotloght',
@@ -34,6 +36,8 @@ export  const homeObjTwo = {
     dark: true,
     primary: true,
     darkText: true,
-    short:false
+    short:false,
+    slides1: false,
+    isimg: true
 }
 

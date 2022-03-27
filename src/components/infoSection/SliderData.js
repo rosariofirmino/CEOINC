@@ -19,14 +19,6 @@ export const SliderData = [
 export const SecondSliderData = [
     {
       image:
-      require('../../images/womenowned.png')   
-    },
-    {
-      image:
-      require('../../images/2019bptw.png')   
-    },
-    {
-      image:
-      require('../../images/fast50.png')   
+      require('../../images/achievements.png')   
     }
   ];

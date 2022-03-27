@@ -1,12 +1,12 @@
 import imag from '../../images/teamImages/1x/Asset 1.png'
-
+import img1 from '../../images/achievements.png'
 import {Button} from '../button'
 import React, { useState } from 'react';
 import { SliderData, SecondSliderData } from './SliderData';
 import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
-import { InfoImg, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
+import { Img1, InfoImg, InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, Img, ImgWrap} from './infoElements'
 
-const InfoSection = ({short, slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt,big, script, isthere}) => {
+const InfoSection = ({isimg, short,slides1, slides,lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, img, alt,big, script, isthere}) => {
     const [current, setCurrent] = useState(0);
     const length = slides.length;
   
@@ -38,7 +38,8 @@ const InfoSection = ({short, slides,lightBg, id, imgStart, topLine, lightText, h
                 </TextWrapper>
                 </Column1>
                 <Column2>
-                <ImgWrap>
+                <Img1 isimg = {isimg} src={img1}/>
+                <ImgWrap slides1={slides1}>
                 <section className='slider'>
                 <BsChevronLeft className='left-arrow' onClick={prevSlide} color='#3EC2F3' />
                 <BsChevronRight className='right-arrow' onClick={nextSlide} color='#3EC2F3' />

@@ -62,6 +62,7 @@ export const TopLine = styled.p`
 `
 export const InfoImg = styled.img`
     height: ${({isthere}) => (isthere ? '100px' : '0px')};
+    
 `
 
 export const Heading = styled.h1`
@@ -75,7 +76,13 @@ export const Heading = styled.h1`
         font-size: 32px;
     }
 `
+export const Img1 = styled.img`
+    height: ${({isimg}) => (isimg ? '140px' : '0px')};
+    margin-bottom: -450px;
+    padding-right: 20px;
 
+    
+`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 20px;
@@ -93,7 +100,8 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
     max-width: 555px;
-    height: 100%;
+    opacity: ${({slides1}) => (slides1 ? '100%' : '0%')};
+    
 `
 
 export const Img = styled.img`

@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #8e8e95;
+    background: transparent;
 
     @media screen and (max-width:1600px) {
         height: 1500px;
@@ -125,7 +125,7 @@ export const AboutIcon2L = styled.img`
 export const AboutH1 = styled.h1`
     justify-content: left;
     font-size: 3rem;
-    color: #fff;
+    color: #3EC2F3;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px){
@@ -134,27 +134,27 @@ export const AboutH1 = styled.h1`
 `
 
 export const AboutH2 = styled.h2`
-    color: #fff;
+    color: #3EC2F3;
     text-align: left;
     font-size: 1.7rem;
     margin-bottom: 10px;
 `
 export const AboutH2R = styled.h2`
-    color: #fff;
+    color: #3EC2F3;
     text-align: left;
     font-size: 1.7rem;
     margin-bottom: 10px;
 `
 
 export const AboutP = styled.p`
-    color: #fff;
+    color: #67686D;
     font-size: 1rem;
     width: 400px;
     font-family: 'Nunito', sans-serif;
     text-align: left;
 `
 export const AboutPR = styled.p`
-    color: #fff;
+    color: #67686D;
     font-size: 1rem;
     width: 400px;
     font-family: 'Nunito', sans-serif;
