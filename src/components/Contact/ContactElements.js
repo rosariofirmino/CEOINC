@@ -53,7 +53,7 @@ export const ContactIcon = styled.img`
 `
 
 export const ContactH1 = styled.h1`
-    font-size: 3rem;
+    font-size: 85px;
     color: #fff;
     margin-bottom: 4px;
 
@@ -75,14 +75,14 @@ export const ContactH3 = styled.h3`
 export const ContactNum = styled.h3`
     color: #fff;
     font-size: 1.7rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 `
 
 export const ContactP = styled.p`
     color: #fff;
     font-size: 1rem;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 `
 export const ContactHr = styled.hr`

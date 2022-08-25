@@ -1,9 +1,10 @@
 import styled from 'styled-components'
+import {Link} from 'react-scroll'
 
 export const InfoContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#fff' : 'rgba(62, 194, 243, 0);')};
     border-radius: 50px;
-    margin: 150px;
+    margin: 100px;
     display: flex;
     @media screen and (max-width:768px){
         padding: 100px 0;
@@ -33,14 +34,14 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
+    padding: 0 80px 0 0;
     grid-area: col1;
     justify-content: right;
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    margin-top: -150px;
+    margin-top: 0px;
     padding: 0 15px;
     grid-area: col2;
 `
@@ -67,7 +68,22 @@ export const InfoImg = styled.img`
 
 export const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 85px;
+    display: inline;
+    
+    line-height: 1.1;
+    font-weight: 600;
+    color: ${({lightText}) => (lightText ? '#3EC2F3' : '#67686D')};
+
+    @media screen and (max-width: 480px){
+        font-size: 32px;
+    }
+`
+export const Heading1 = styled.h1`
+    margin-bottom: 24px;
+    font-size: 85px;
+    display: inline;
+    
     line-height: 1.1;
     font-weight: 600;
     color: ${({lightText}) => (lightText ? '#3EC2F3' : '#67686D')};
@@ -77,18 +93,45 @@ export const Heading = styled.h1`
     }
 `
 export const Img1 = styled.img`
-    height: ${({isimg}) => (isimg ? '140px' : '0px')};
-    margin-bottom: -450px;
+    height: ${({isimg}) => (isimg ? '350px' : '0px')};
+    margin-bottom: -525px;
     padding-right: 20px;
 
     
 `
+export const ButtonEx = styled(Link)`
+    border-radius: 50px;
+    background: ${({primary}) => (primary ?  '#fff' : '#3EC2F3')};
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
+    color : ${({dark}) => (dark ? '#3EC2F3' : '#fff')};
+    font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
+    outline: none;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: ${({primary}) => (primary ? '#3EC2F3' : '#fff')};
+        color : ${({dark}) => (dark ? '#fff' : '#3EC2F3')};
+    }
+
+`
 export const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 20px;
-    font-family: ${({script})=> (script ? "'Vollkorn', serif;" : "'Nunito', sans-serif")};
-    font-size: ${({big})=> (big ? '35px' : '18px')};
-    line-height: ${({short})=> (short ? '24px' : '40px')};
+    letter-spacing: normal;
+    padding: 0 0 0 0;
+    font-weight: 400;
+    font-family: ${({script})=> (script ? "'PT Serif', serif;" : "'Lato', sans-serif")};
+    font-size: ${({big})=> (big ? '40px' : '25px')};
+    line-height: ${({short})=> (short ? '29px' : '40px')};
     color: ${({darkText}) => (darkText ? '#67686D' : '#3EC2F3')};
     
 `

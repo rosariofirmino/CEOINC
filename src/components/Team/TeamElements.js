@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const TeamContainer = styled.div`
     height: 600px;
     border-radius: 50px;
+    padding-top: 125px;
     margin: 100px;
     display: flex;
     flex-direction: column;
@@ -41,17 +42,28 @@ export const TeamIcon = styled.img`
     height: 160px;
     margin-bottom: 10px;
 `
-
+export const TitleCont = styled.div`
+    float: left;
+`
 export const TeamH1 = styled.h1`
-    font-size: 3rem;
+    font-size: 105px;
     color: #3EC2F3;
-    margin-bottom: 64px;
+    margin-bottom: 0px;
+    display: inline;
+    @media screen and (max-width: 480px){
+        font-size: 2.5rem;
+    }
+`
+export const TeamH1b = styled.h1`
+    font-size: 85px;
+    color: #3EC2F3;
+    margin-bottom: 0px;
+    display: inline;
 
     @media screen and (max-width: 480px){
         font-size: 2.5rem;
     }
 `
-
 export const TeamH2 = styled.h2`
     color: #3EC2F3;
     font-size: 1.7rem;
@@ -61,6 +73,7 @@ export const TeamH2 = styled.h2`
 export const TeamP = styled.p`
     color: #67686D;
     font-size: 1rem;
-    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
     text-align: center;
 `

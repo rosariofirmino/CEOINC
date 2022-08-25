@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const AboutContainer = styled.div`
     height: 1600px;
     border-radius: 50px;
-    margin: 150px;
+    margin: 85px;
+    padding-top: 170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,8 +51,8 @@ export const AboutCardInfo = styled.div`
     flex-direction: column;
     justify-content: left;
     align-items: left;
-    padding-right: 55px;
-    padding-left: 55px;
+    padding-right: 135px;
+    padding-left: 75px;
     @media screen and (max-width:1300px) {
         padding-right: 55px;
         padding-left: 55px; 
@@ -74,6 +75,10 @@ export const AboutCardR = styled.div`
     }
 `
 
+export const TitleCont = styled.div`
+    padding-bottom: 55px;
+`
+
 export const AboutIcon = styled.img`
     height: 250px;
     margin-bottom: 10px;
@@ -86,7 +91,7 @@ export const AboutIcon = styled.img`
     }
 `
 export const AboutIconL = styled.img`
-    height: 350px;
+    height: 420px;
     margin-bottom: 10px;
     z-index: 2;
     padding-right: 80px;
@@ -110,11 +115,25 @@ export const AboutIcon2 = styled.img`
         margin-left: -50px;
     }
 `
-export const AboutIcon2L = styled.img`
-    height: 340px;
+export const AboutIcon2f = styled.img`
+    height: 240px;
     margin-bottom: 10px;
-    margin-top: -20px;
-    margin-right: -200px;
+    margin-top: -25px;
+    margin-left: -405px;
+    z-index: 1;
+    padding-right: 80px;
+
+
+    @media screen and (max-width: 1300px){
+        margin-top: -240px;
+        margin-left: -50px;
+    }
+`
+export const AboutIcon2L = styled.img`
+    height: 400px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    margin-right: -250px;
     z-index: 1;
 
     @media screen and (max-width: 1300px){
@@ -124,39 +143,56 @@ export const AboutIcon2L = styled.img`
 `
 export const AboutH1 = styled.h1`
     justify-content: left;
-    font-size: 3rem;
+    font-size: 105px;
     color: #3EC2F3;
     margin-bottom: 64px;
-
+    display: inline;
+    @media screen and (max-width: 480px){
+        font-size: 2.5rem;
+    }
+`
+export const AboutH1b = styled.h1`
+    justify-content: left;
+    font-size: 85px;
+    color: #3EC2F3;
+    margin-bottom: 64px;
+    display: inline;
     @media screen and (max-width: 480px){
         font-size: 2.5rem;
     }
 `
 
+
 export const AboutH2 = styled.h2`
     color: #3EC2F3;
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 `
 export const AboutH2R = styled.h2`
     color: #3EC2F3;
     text-align: left;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     margin-bottom: 10px;
 `
 
 export const AboutP = styled.p`
     color: #67686D;
-    font-size: 1rem;
-    width: 400px;
-    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    width: 500px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    letter-spacing: normal;
+
     text-align: left;
 `
 export const AboutPR = styled.p`
     color: #67686D;
-    font-size: 1rem;
-    width: 400px;
-    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: normal;
+
+    width: 500px;
+    font-family: 'Lato', sans-serif;
     text-align: left;
 `

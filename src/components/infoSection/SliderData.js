@@ -1,19 +1,23 @@
 export const SliderData = [
     {
       image:
-      require('../../images/1x/Asset 1.png') 
+      require('../../images/1x/engineering.png') 
     },
     {
       image:
-      require('../../images/1x/Asset 2.png')   
+      require('../../images/1x/hr.png') 
     },
     {
       image:
-      require('../../images/1x/Asset 3.png')  
+      require('../../images/1x/sales.png')   
     },
     {
       image:
-      require('../../images/1x/Asset 4.png')   
+      require('../../images/1x/finance.png')  
+    },
+    {
+      image:
+      require('../../images/1x/product.png')   
     }
   ];
 export const SecondSliderData = [

@@ -16,14 +16,16 @@ import Chris from '../../images/teamImages/Chris-Stroud-2.png'
 import Annette from '../../images/teamImages/annette.png'
 
 
-import { TeamCard, TeamContainer, TeamH1, TeamH2, TeamIcon, TeamP, TeamWrapper } from './TeamElements'
+import { TitleCont, TeamH1b, TeamCard, TeamContainer, TeamH1, TeamH2, TeamIcon, TeamP, TeamWrapper } from './TeamElements'
 import HorizontalScroll from 'react-scroll-horizontal'
 
 const Team = () => {
   return (
     <TeamContainer id="team">
-        <TeamH1>Our Team</TeamH1>
-        
+        <TitleCont>
+        <TeamH1></TeamH1>
+        <TeamH1b>Our Team</TeamH1b>
+        </TitleCont>
             <HorizontalScroll>
             <TeamCard>
                 <TeamIcon src={Debbie}/>
@@ -46,11 +48,6 @@ const Team = () => {
                 <TeamP>Partner</TeamP>
             </TeamCard>
             <TeamCard>
-                <TeamIcon src={Annemarie}/>
-                <TeamH2>AnneMarie Cicero</TeamH2>
-                <TeamP>Recruiting Manager</TeamP>
-            </TeamCard>
-            <TeamCard>
                 <TeamIcon src={Anthony}/>
                 <TeamH2>Anthony Nakvosas</TeamH2>
                 <TeamP>Recruiting Manager</TeamP>
@@ -58,21 +55,6 @@ const Team = () => {
             <TeamCard>
                 <TeamIcon src={Karie}/>
                 <TeamH2>Karie Collins</TeamH2>
-                <TeamP>Recruiting Manager</TeamP>
-            </TeamCard>
-            <TeamCard>
-                <TeamIcon src={Karsh}/>
-                <TeamH2>Karsh Patel</TeamH2>
-                <TeamP>Business Development Manager</TeamP>
-            </TeamCard>
-            <TeamCard>
-                <TeamIcon src={Barry}/>
-                <TeamH2>Barry Doctor</TeamH2>
-                <TeamP>Recruiting Manager</TeamP>
-            </TeamCard>
-            <TeamCard>
-                <TeamIcon src={Mary}/>
-                <TeamH2>Mary Cheshareck</TeamH2>
                 <TeamP>Recruiting Manager</TeamP>
             </TeamCard>
             <TeamCard>
@@ -89,11 +71,6 @@ const Team = () => {
                 <TeamIcon src={Sarah}/>
                 <TeamH2>Sarah Fuller</TeamH2>
                 <TeamP>Office Manager</TeamP>
-            </TeamCard>
-            <TeamCard>
-                <TeamIcon src={Chris}/>
-                <TeamH2>Chris Stroud</TeamH2>
-                <TeamP>Business Development Manager</TeamP>
             </TeamCard>
             <TeamCard>
                 <TeamIcon src={Annette}/>
