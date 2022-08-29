@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ButtonFooter} from '../button'
+import {ButtonFooter2} from '../button'
 import FL from '../../images/ceofooter.png'
 import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
 import {FooterText, FooterAd, FooterBtn, FooterLogo, FooterBtnItem, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkItems, FooterLink, FooterLinkTitle, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
@@ -34,7 +34,7 @@ const FooterSection = () => {
                                 <FaLinkedin/>
                             </FooterBtnItem>
                         </FooterBtn>
-                        <ButtonFooter>Find Jobs</ButtonFooter>
+                        <ButtonFooter2>Find Jobs</ButtonFooter2>
                     </FooterBtnWrapper>
                 </FooterLinksWrapper>
             </FooterLinksContainer>

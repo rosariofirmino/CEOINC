@@ -7,12 +7,12 @@ import Annemarie from '../../images/teamImages/AnneMarie-Cicero.png'
 import Anthony from '../../images/teamImages/Anthony-Nakvosas-1.png'
 import Karie from '../../images/teamImages/Karie-Collins-.png'
 import Karsh from '../../images/teamImages/Karsh-Patel.png'
-import Barry from '../../images/teamImages/ceo-staff.png'
-import Mary from '../../images/teamImages/mary-V2.png'
+import Colleen from '../../images/teamImages/Colleen Prendeville.png'
+import Eric from '../../images/teamImages/Eric Cox.png'
 import Matt from '../../images/teamImages/Matt-Gorsuch.png'
 import Katie from '../../images/teamImages/katie-2.png'
 import Sarah from '../../images/teamImages/sarah-fuller.png'
-import Chris from '../../images/teamImages/Chris-Stroud-2.png'
+import Andrea from '../../images/teamImages/Andrea Santilli.png'
 import Annette from '../../images/teamImages/annette.png'
 
 
@@ -50,6 +50,21 @@ const Team = () => {
             <TeamCard>
                 <TeamIcon src={Anthony}/>
                 <TeamH2>Anthony Nakvosas</TeamH2>
+                <TeamP>Recruiting Manager</TeamP>
+            </TeamCard>
+            <TeamCard>
+                <TeamIcon src={Andrea}/>
+                <TeamH2>Andrea Santilli</TeamH2>
+                <TeamP>Recruiting Manager</TeamP>
+            </TeamCard>
+            <TeamCard>
+                <TeamIcon src={Eric}/>
+                <TeamH2>Eric Cox</TeamH2>
+                <TeamP>Recruiting Manager</TeamP>
+            </TeamCard>
+            <TeamCard>
+                <TeamIcon src={Colleen}/>
+                <TeamH2>Colleen Prendeville</TeamH2>
                 <TeamP>Recruiting Manager</TeamP>
             </TeamCard>
             <TeamCard>

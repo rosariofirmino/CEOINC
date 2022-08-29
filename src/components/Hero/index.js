@@ -1,7 +1,7 @@
 import React from 'react'
 import vid from '../../videos/ceovid.mp4'
 import { HeroContainer, HeroBg, VideoBg, HeroBtnWrapper, HeroContent, HeroH1 } from './heroelements'
-import {Button} from '../button'
+import {Button2} from '../button'
 
 const HeroSection = () => {
   return (
@@ -14,9 +14,9 @@ const HeroSection = () => {
                 DELIVERING TOP TALENT
             </HeroH1>
             <HeroBtnWrapper>
-                <Button to="jobs">
+                <Button2 href='https://ceoinc.com/career-portal/#/jobs'>
                 Find Jobs 
-                </Button>
+                </Button2>
             </HeroBtnWrapper>
         </HeroContent>
     </HeroContainer>

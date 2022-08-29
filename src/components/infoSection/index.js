@@ -41,7 +41,7 @@ const InfoSection = ({isimg, short,slides1, slides,lightBg, id, imgStart, topLin
                     <Subtitle darkText={darkText} script={script} big={big} short={short}>
                         {description}
                     </Subtitle>
-                    <ButtonEx>See our positions</ButtonEx>
+                    <ButtonEx href='https://ceoinc.com/career-portal/#/jobs'>See our positions</ButtonEx>
                 </TextWrapper>
                 </Column1>
                 <Column2>

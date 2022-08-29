@@ -99,7 +99,7 @@ export const Img1 = styled.img`
 
     
 `
-export const ButtonEx = styled(Link)`
+export const ButtonEx = styled.a`
     border-radius: 50px;
     background: ${({primary}) => (primary ?  '#fff' : '#3EC2F3')};
     white-space: nowrap;
@@ -115,6 +115,7 @@ export const ButtonEx = styled(Link)`
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
+    text-decoration: none;
 
     &:hover {
         transition: all 0.2s ease-in-out;
