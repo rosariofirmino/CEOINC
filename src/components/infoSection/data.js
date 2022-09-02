@@ -27,7 +27,7 @@ export  const homeObjTwo = {
     script: true,
     big: true,
     topLine: '',
-    headLine: 'spotloght',
+    headLine: 'spotlight',
     description: '"Delivering top talent nationally for over 27 years"',
     imgStart: true,
     img: require('../../images/team.png'),

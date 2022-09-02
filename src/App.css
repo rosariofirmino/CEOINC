@@ -1,69 +1,81 @@
-
-*{
-    box-sizing: border-box;
-    margin:0;
-    padding: 0;
-    letter-spacing: 2px;
-    font-family: 'Bebas Neue', cursive;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 2px;
+  font-family: 'Bebas Neue', cursive;
 }
-.bg{
+
+.bg {
   overflow-x: hidden;
 }
+
 .slider {
-    position: relative;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image {
-    width: 175px;
-    margin: 0 0 10px 0;
-    padding-right: 0;
-  }
-  
-  .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 3rem;
-    color: #000;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .left-arrow {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 3rem;
-    color: #000;
-    cursor: pointer;
-    user-select: none;
-  }
-  
-  .slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-  }
-  a:visited { 
-    text-decoration: none; 
-    color: white; 
-   }
-   body{
-    width: 100%;
-    position: relative;
-    overflow-x: hidden;
+  position: relative;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-   .full-size{
-     height:100%;
-     width:100%;
-     overflow:hidden; /* or overflow:auto; if you want scrollbars */
-   }
+
+.image {
+  width: 175px;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1.08);
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.full-size {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  /* or overflow:auto; if you want scrollbars */
+}
+
+.img-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 240px;
+}
+
+.img-slider--image {
+  width: 175px;
+  max-height: 240px;
+  margin: 0 1rem;
+}
+
+.img-slider--icon {
+  cursor: pointer;
+  user-select: none;
+}
+
+.fade {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.8) }
+  100% { opacity: 1; transform: scale(1) }
+}

@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import {Link} from 'react-scroll'
 
 export const InfoContainer = styled.div`
+    padding-top: 125px;
     background: ${({lightBg}) => (lightBg ? '#fff' : 'rgba(62, 194, 243, 0);')};
     border-radius: 50px;
-    margin: 100px;
     display: flex;
     @media screen and (max-width:768px){
         padding: 100px 0;
@@ -13,18 +13,18 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
     display:grid;
     z-index: 1;
-    height: 500px;
-    width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
-    justify-content: right;
 `
 
 export const InfoRow = styled.div`
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    justify-items: center;
+    grid-auto-columns: ${({imgStart}) => (imgStart ? `auto 1fr` : `1fr auto`)};
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
     @media screen and (max-width: 768px){
@@ -34,14 +34,18 @@ export const InfoRow = styled.div`
 
 export const Column1 = styled.div`
     margin-bottom: 15px;
-    padding: 0 80px 0 0;
+    padding-right: ${({imgStart}) => (imgStart ? `0` : `80px`)};
+    padding-left: ${({imgStart}) => (imgStart ? `80px` : `0`)};
     grid-area: col1;
-    justify-content: right;
+
+  @media screen and (max-width: 768px){
+      padding-right: 0;
+  }
 `
 
 export const Column2 = styled.div`
     margin-bottom: 15px;
-    margin-top: 0px;
+    margin-top: 0;
     padding: 0 15px;
     grid-area: col2;
 `
@@ -93,11 +97,9 @@ export const Heading1 = styled.h1`
     }
 `
 export const Img1 = styled.img`
-    height: ${({isimg}) => (isimg ? '350px' : '0px')};
-    margin-bottom: -525px;
+    max-width: 100%;
+    max-height: 350px;
     padding-right: 20px;
-
-    
 `
 export const ButtonEx = styled.a`
     border-radius: 50px;
@@ -134,7 +136,10 @@ export const Subtitle = styled.p`
     font-size: ${({big})=> (big ? '40px' : '25px')};
     line-height: ${({short})=> (short ? '29px' : '40px')};
     color: ${({darkText}) => (darkText ? '#67686D' : '#3EC2F3')};
-    
+
+    @media screen and (max-width: 480px){
+      font-size: ${({big})=> (big ? '25px' : '20px')};
+    }
 `
 
 export const BtnWrap = styled.div`

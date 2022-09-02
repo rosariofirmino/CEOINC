@@ -1,32 +1,22 @@
 import styled from 'styled-components'
 
 export const AboutContainer = styled.div`
-    height: 1600px;
     border-radius: 50px;
-    margin: 85px;
-    padding-top: 170px;
+    padding-top: 125px;
+    margin: 0 85px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: transparent;
-
-    @media screen and (max-width:1600px) {
-        height: 1500px;
-    }
-    @media screen and (max-width:1300px) {
-        height: 1900px;
-    }
 `
 
 export const AboutWrapper = styled.div`
     max-width: 1600px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
     grid-gap: 16px;
-    padding:;
 
     @media screen and (max-width: 1300px){
         padding: 0 20px;
@@ -65,7 +55,6 @@ export const AboutCardR = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 450px;
     padding: 30px;
     transition: all 0.2 ease-in-out;
     @media screen and (max-width:1300px) {
@@ -79,68 +68,52 @@ export const TitleCont = styled.div`
     padding-bottom: 55px;
 `
 
+export const ImgStackContainer = styled.div`
+    position: relative;
+    margin-top: 40px;
+`
+
 export const AboutIcon = styled.img`
+    position: absolute;
     height: 250px;
-    margin-bottom: 10px;
-    z-index: 2;
-    padding-right: 80px;
     &:hover{
         transform: scale(1.02);
         transition: all 0.5s ease-in-out;
         cursor: pointer;
     }
 `
-export const AboutIconL = styled.img`
-    height: 420px;
-    margin-bottom: 10px;
-    z-index: 2;
-    padding-right: 80px;
-    &:hover{
-        transform: scale(1.02);
-        transition: all 0.5s ease-in-out;
-        cursor: pointer;
-    }
-`
-export const AboutIcon2 = styled.img`
-    height: 240px;
-    margin-bottom: 10px;
-    margin-top: 30px;
-    margin-left: -405px;
-    z-index: 1;
-    padding-right: 80px;
 
-
-    @media screen and (max-width: 1300px){
-        margin-top: -240px;
-        margin-left: -50px;
-    }
-`
 export const AboutIcon2f = styled.img`
-    height: 240px;
-    margin-bottom: 10px;
-    margin-top: -25px;
-    margin-left: -405px;
-    z-index: 1;
-    padding-right: 80px;
+  position: relative;
+  transform: translate(35px, -5px);
+  height: 240px;
+  z-index: -1;
+`
 
+export const AboutIcon2 = styled.img`
+  position: relative;
+  transform: translate(15px, -15px);
+  height: 240px;
+  z-index: -1;
+`
 
-    @media screen and (max-width: 1300px){
-        margin-top: -240px;
-        margin-left: -50px;
+export const AboutIconL = styled.img`
+    position: absolute;
+    height: 420px;
+    &:hover{
+        transform: scale(1.02);
+        transition: all 0.5s ease-in-out;
+        cursor: pointer;
     }
 `
+
 export const AboutIcon2L = styled.img`
+    position: relative;
+    transform: translate(32px, -5px);
     height: 400px;
-    margin-bottom: 10px;
-    margin-top: -30px;
-    margin-right: -250px;
-    z-index: 1;
-
-    @media screen and (max-width: 1300px){
-        margin-top: -240px;
-        margin-left: -200px;
-    }
+    z-index: -1;
 `
+
 export const AboutH1 = styled.h1`
     justify-content: left;
     font-size: 105px;
@@ -185,6 +158,10 @@ export const AboutP = styled.p`
     letter-spacing: normal;
 
     text-align: left;
+
+  @media screen and (max-width: 650px){
+    width: 80vw;
+  }
 `
 export const AboutPR = styled.p`
     color: #67686D;
@@ -195,4 +172,8 @@ export const AboutPR = styled.p`
     width: 500px;
     font-family: 'Lato', sans-serif;
     text-align: left;
+
+  @media screen and (max-width: 650px){
+    width: 80vw;
+  }
 `
