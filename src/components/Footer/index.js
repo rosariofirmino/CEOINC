@@ -3,17 +3,14 @@ import React from 'react'
 import {ButtonFooter2} from '../button'
 import FL from '../../images/ceofooter.png'
 import {FaTwitter, FaFacebookF, FaLinkedin} from 'react-icons/fa'
-import {FooterText, FooterAd, FooterBtn, FooterLogo, FooterBtnItem, FooterContainer, FooterWrap, FooterLinksContainer, FooterLinkItems, FooterLink, FooterLinkTitle, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
+import {FooterText, FooterAd, FooterBtn, FooterLogo, FooterBtnItem, FooterContainer, FooterLinkItems, FooterBtnWrapper, FooterLinksWrapper } from './FooterElements'
 
 const FooterSection = () => {
   return (
     <FooterContainer>
-        <FooterWrap>
-            <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinkItems>
                         <FooterLogo src={FL}/>
-                        
                     </FooterLinkItems>
                     <FooterText>
                         <FooterAd>412 Louise Avenue, Charlotte, NC 28204</FooterAd>
@@ -37,8 +34,6 @@ const FooterSection = () => {
                         <ButtonFooter2>Find Jobs</ButtonFooter2>
                     </FooterBtnWrapper>
                 </FooterLinksWrapper>
-            </FooterLinksContainer>
-        </FooterWrap>
     </FooterContainer>
   )
 }

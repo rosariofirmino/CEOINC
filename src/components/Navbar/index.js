@@ -24,9 +24,6 @@ function Navbar ({toggle}) {
                 <NavLogo to='/'>
                     <NavLogoImg src={Icon1}/>
                 </NavLogo>
-                <MobileIcon onClick={toggle}>
-                    <FaBars />
-                </MobileIcon>
                 <NavMenu>
                     <NavItem>
                         <NavLinks to="expertise" smooth={true} duration={500} spy={true} exact="true" offset={-80}>
@@ -64,6 +61,9 @@ function Navbar ({toggle}) {
                     <NavBtnItem>
                         <a href="https://www.linkedin.com/company/ceo-inc/"><FaLinkedin/></a>
                     </NavBtnItem>
+                    <MobileIcon onClick={toggle}>
+                        <FaBars size={24}/>
+                    </MobileIcon>
                 </NavBtn>
             </NavbarContainer>
         </Nav>

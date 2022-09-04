@@ -1,23 +1,19 @@
 import styled from 'styled-components'
 
-export const Background = styled.img`
-    height: 5300px;
-    max-width: 1910px;
-    margin-top: 1000px;
-    justify-content: center;
-    z-index:-99999;
-    margin-top: -2000px;
-    margin-left: -400px;
-    opacity: 10%;
-    position:absolute;
-
-    @media screen and (max-width:950px) {
-        height: 5300px;
-    }
-    @media screen and (max-width:480px) {
-        height: 5600px;
+export const BackgroundContainer = styled.div`
+    position: relative;
+    overflow: hidden;
+  
+    @supports (overflow: clip) {
+      overflow: clip;
     }
 `
-export const BackgroundContainer = styled.div`
 
+export const Background = styled.div`
+    background-image: url(${props => props.bg});
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 `
