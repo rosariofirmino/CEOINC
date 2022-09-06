@@ -1,6 +1,6 @@
 import React from 'react'
-import { SideBarContainer, Icon, CloseIcon, SideBarLink, SideBarRoute
-, SideBarWrapper, SideBtnWrap, SideBarMenu } from './SidebarElements'
+import { SideBarContainer, Icon, CloseIcon, SideBarLink, SideBarWrapper, SideBtnWrap, SideBarMenu } from './SidebarElements'
+import {Button2} from '../button'
 
 const Sidebar = ({isOpen, toggle}) => {
   return (
@@ -27,9 +27,9 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SideBarLink>
             </SideBarMenu>
             <SideBtnWrap>
-                <SideBarRoute to="/jobs">
+                <Button2 href='https://ceoinc.com/career-portal/#/jobs'>
                     Find Jobs
-                </SideBarRoute>
+                </Button2>
             </SideBtnWrap>
         </SideBarWrapper>
     </SideBarContainer>
