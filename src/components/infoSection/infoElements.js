@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link} from 'react-scroll'
 
 export const InfoContainer = styled.div`
     padding-top: 125px;
