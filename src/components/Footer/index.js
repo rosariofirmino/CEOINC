@@ -22,16 +22,16 @@ const FooterSection = () => {
                     <FooterBtnWrapper>
                         <FooterBtn>
                             <FooterBtnItem>
-                                <FaTwitter/>
+                                <a href="https://twitter.com/ceoinc1"><FaTwitter/></a>
                             </FooterBtnItem>
                             <FooterBtnItem>
-                                <FaFacebookF/>
+                                <a href="https://www.facebook.com/CEOINC1/"><FaFacebookF/></a>
                             </FooterBtnItem>
                             <FooterBtnItem>
-                                <FaLinkedin/>
+                                <a href="https://www.linkedin.com/company/ceo-inc/"><FaLinkedin/></a>
                             </FooterBtnItem>
                         </FooterBtn>
-                        <ButtonFooter2>Find Jobs</ButtonFooter2>
+                        <ButtonFooter2 href='https://ceoinc.com/career-portal/#/jobs'>Find Jobs</ButtonFooter2>
                     </FooterBtnWrapper>
                 </FooterLinksWrapper>
     </FooterContainer>
