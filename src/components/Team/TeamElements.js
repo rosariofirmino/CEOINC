@@ -1,13 +1,11 @@
 import styled from 'styled-components'
 
 export const TeamContainer = styled.div`
-    height: 600px;
     border-radius: 50px;
     margin: 0 50px;
     padding-top: 125px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 `
 
@@ -18,6 +16,16 @@ export const TeamWrapper = styled.div`
     align-items: center;
     padding: 0 50px;
 
+`
+
+export const TeamScroll = styled.div`
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  max-width: 1600px;
+  width: 100%;
+  height: 100%;
 `
 
 export const TeamCard = styled.div`
