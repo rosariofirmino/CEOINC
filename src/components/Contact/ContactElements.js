@@ -89,3 +89,78 @@ export const ContactHr = styled.hr`
   color: #fff;
   background-color: #fff;
 `
+
+export const OpportunityForm = styled.form`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+
+  input, select {
+    width: 100%;
+  }
+
+  #opportunity-name, #opportunity-industry, #opportunity-position, #opportunity-position-other, #opportunity-resume, #opportunity-submit {
+    grid-column: 1 / 3;
+  }
+
+  #opportunity-name {
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+  }
+  
+  select, input {
+    padding: 0.25em;
+  }
+  
+  #opportunity-submit {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+  }
+
+
+  .red {
+    color: red;
+  }
+`
+
+export const TalentForm = styled.form`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+
+  input, select {
+    width: 100%;
+  }
+
+  #talent-name, #talent-submit, #talent-industry, #talent-industry-other, #talent-company {
+    grid-column: 1 / 3;
+  }
+
+  #talent-name {
+    div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+  }
+  
+  select, input {
+    padding: 0.25em;
+  }
+  
+  #talent-submit {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+  }
+  
+  .red {
+    color: red;
+  }
+`
