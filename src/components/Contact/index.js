@@ -26,9 +26,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_gd09shg', 'opportunity-form', opportunityForm.current, 'Ndzd9tFu3fRhPXLSM')
       .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+        setIsOpportunityModalOpen(false);
+      }, (e) => {
+        console.error(e);
       });
   }
 
@@ -37,9 +37,9 @@ const Contact = () => {
 
     emailjs.sendForm('service_gd09shg', 'talent-form', talentForm.current, 'Ndzd9tFu3fRhPXLSM')
       .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
+        setIsTalentModalOpen(false);
+      }, (e) => {
+        console.error(e);
       });
   }
 
