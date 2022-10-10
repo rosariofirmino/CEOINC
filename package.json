@@ -2,7 +2,7 @@
   "name": "ceoinc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rosariofirmino.github.io/CEOINC",
+  "homepage": "https://ceoinc.com",
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
     "@testing-library/jest-dom": "^5.16.2",
