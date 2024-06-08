@@ -38,6 +38,7 @@ export const FooterAd = styled.p`
     color: white;
     font-size: 1rem;
     font-family: 'Lato', sans-serif;
+    font-weight: bold; 
     letter-spacing: normal;
 
     text-align: center;
@@ -52,6 +53,7 @@ export const FooterBtnWrapper = styled.div`
 export const FooterBtnItem = styled.div`
     padding-left: 10px;
     font-size: 1.4rem;
+    color: #fff;
     &:hover {
         font-size: 1.6rem;
         transition: all 0.2s ease-in-out;
@@ -62,4 +64,9 @@ export const FooterBtn = styled.nav`
     display: flex;
     align-items: center;
     color: #fff;
+    color: #fff;
+  
+    a {
+      color: inherit;
+    }
 `

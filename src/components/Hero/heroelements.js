@@ -41,6 +41,15 @@ export const HeroBg = styled.div`
     height: 100%;
     overflow: hidden;
 `
+
+export const DarkOverlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(18, 86, 107, 0.6), rgba(38, 120, 150, 0.3)); /* Gradient from 50% opacity at top to 30% opacity at bottom */
+`;
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;

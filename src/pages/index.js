@@ -7,6 +7,7 @@ import FooterSection from '../components/Footer'
 import Contact from '../components/Contact'
 import About from '../components/About'
 import Team from '../components/Team'
+
 import { SliderData, SecondSliderData } from '../components/infoSection/SliderData'
 import { homeObjOne, homeObjTwo } from '../components/infoSection/data'
 

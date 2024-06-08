@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const InfoContainer = styled.div`
-    padding-top: 125px;
+    padding-top: 100px;
     background: ${({lightBg}) => (lightBg ? '#fff' : 'rgba(62, 194, 243, 0);')};
     border-radius: 50px;
     display: flex;
@@ -26,7 +26,7 @@ export const InfoRow = styled.div`
     grid-auto-columns: ${({imgStart}) => (imgStart ? `auto 1fr` : `1fr auto`)};
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 900px){
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `

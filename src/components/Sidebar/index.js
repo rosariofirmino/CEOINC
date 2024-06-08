@@ -27,7 +27,7 @@ const Sidebar = ({isOpen, toggle}) => {
                 </SideBarLink>
             </SideBarMenu>
             <SideBtnWrap>
-                <Button2 href='https://ceoinc.com/career-portal/#/jobs'>
+                <Button2 href='https://career.ceoinc.com/#/jobs'>
                     Find Jobs
                 </Button2>
             </SideBtnWrap>

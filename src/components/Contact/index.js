@@ -76,7 +76,7 @@ const Contact = () => {
         </ContactContainer>
       </ContactWrapper>
 
-      <OverlayModal isOpen={isOpportunityModalOpen} setIsOpen={setIsOpportunityModalOpen} onClose={() => setIsOpportunityOtherChosen(false)} title="Looking for new opportunity?" description="Complete this form to take the first step." >
+      <OverlayModal isOpen={isOpportunityModalOpen} setIsOpen={setIsOpportunityModalOpen} onClose={() => setIsOpportunityOtherChosen(false)} title="Looking for a new opportunity?" description="Complete this form to take the first step." >
         <OpportunityForm ref={opportunityForm} onSubmit={sendOpportunityEmail}>
           <label id="opportunity-name">
             <p>Name <span className="red">*</span></p>
@@ -97,7 +97,7 @@ const Contact = () => {
           </label>
 
           <label id="opportunity-industry">
-            <p>Your Industry</p>
+            <p>Position Typr</p>
             <select name="industry">
               <option value="packaging">Packaging</option>
               <option value="composites">Composites</option>
@@ -162,7 +162,7 @@ const Contact = () => {
           </label>
 
           <label id="talent-industry">
-            <p>Your Industry</p>
+            <p>Position Type</p>
             <select name="industry" onChange={handleTalentOther}>
               <option value="engineering">Engineer</option>
               <option value="production/operations-management">Production/Operations Management</option>

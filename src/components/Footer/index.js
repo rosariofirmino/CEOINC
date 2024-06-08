@@ -13,7 +13,7 @@ const FooterSection = () => {
                         <FooterLogo src={FL}/>
                     </FooterLinkItems>
                     <FooterText>
-                        <FooterAd>412 Louise Avenue, Charlotte, NC 28204</FooterAd>
+                        <FooterAd>3300 Cambria Road, Charlotte NC 28210</FooterAd>
                         <FooterAd>Toll Free: 888-242-1755</FooterAd>
                         <FooterAd>Tel: 704-372-4701</FooterAd>
                         <FooterAd>Fax: 704-372-4707</FooterAd>
@@ -22,16 +22,16 @@ const FooterSection = () => {
                     <FooterBtnWrapper>
                         <FooterBtn>
                             <FooterBtnItem>
-                                <a href="https://twitter.com/ceoinc1"><FaTwitter/></a>
+                                <a href="https://twitter.com/ceoinc1" style={{ textDecoration: 'none' }}><FaTwitter/></a>
                             </FooterBtnItem>
                             <FooterBtnItem>
-                                <a href="https://www.facebook.com/CEOINC1/"><FaFacebookF/></a>
+                                <a href="https://www.facebook.com/CEOINC1/" style={{ textDecoration: 'none' }}><FaFacebookF/></a>
                             </FooterBtnItem>
                             <FooterBtnItem>
-                                <a href="https://www.linkedin.com/company/ceo-inc/"><FaLinkedin/></a>
+                                <a href="https://www.linkedin.com/company/ceo-inc/" style={{ textDecoration: 'none' }}><FaLinkedin/></a>
                             </FooterBtnItem>
                         </FooterBtn>
-                        <ButtonFooter2 href='https://ceoinc.com/career-portal/#/jobs'>Find Jobs</ButtonFooter2>
+                        <ButtonFooter2 href='https://career.ceoinc.com/#/jobs'>Find Jobs</ButtonFooter2>
                     </FooterBtnWrapper>
                 </FooterLinksWrapper>
     </FooterContainer>

@@ -3,17 +3,15 @@ import Debbie from '../../images/teamImages/debbie-millhouse.png';
 import Randy from '../../images/teamImages/Randy-Holloran.png';
 import Mark from '../../images/teamImages/Mark-Collins-1.png';
 import Don from '../../images/teamImages/Don-v4.png';
-import Annemarie from '../../images/teamImages/AnneMarie-Cicero.png';
 import Anthony from '../../images/teamImages/Anthony-Nakvosas-1.png';
 import Karie from '../../images/teamImages/Karie-Collins-.png';
-import Karsh from '../../images/teamImages/Karsh-Patel.png';
 import Colleen from '../../images/teamImages/Colleen Prendeville.png';
-import Eric from '../../images/teamImages/Eric Cox.png';
-import Matt from '../../images/teamImages/Matt-Gorsuch.png';
-import Katie from '../../images/teamImages/katie-2.png';
 import Sarah from '../../images/teamImages/sarah-fuller.png';
-import Andrea from '../../images/teamImages/Andrea Santilli.png';
+import Ben from '../../images/teamImages/BenKoczab.png';
 import Annette from '../../images/teamImages/annette.png';
+import Acacia from '../../images/teamImages/acacia.png';
+import Stacy from '../../images/teamImages/stacy.png';
+
 
 import {
   TitleCont,
@@ -28,15 +26,7 @@ import {
 } from './TeamElements';
 
 const Team = () => {
-  useEffect(() => {
-    const scrollContainer = document.getElementById('team-horizontal-scroll');
 
-    scrollContainer.addEventListener('wheel', (evt) => {
-      evt.preventDefault();
-      scrollContainer.scrollLeft += evt.deltaY;
-      scrollContainer.scrollLeft += evt.deltaX;
-    });
-  }, [])
 
   return (
     <TeamContainer id='team'>
@@ -45,71 +35,90 @@ const Team = () => {
         <TeamH1b>Our Team</TeamH1b>
       </TitleCont>
       <TeamScroll id='team-horizontal-scroll'>
+        <a href='https://www.linkedin.com/in/debby-millhouse-095293' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Debbie} />
           <TeamH2>Debbie Millhouse</TeamH2>
           <TeamP>President</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/holloran' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Randy} />
           <TeamH2>Randy Holloran</TeamH2>
           <TeamP>Chief Operating Officer</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/mark1collins' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Mark} />
           <TeamH2>Mark Collins</TeamH2>
           <TeamP>Managing Director</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://linkedin.com/in/don-cartwright-17866' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Don} />
           <TeamH2>Don Cartwright</TeamH2>
           <TeamP>Partner</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/anthonynakvosas' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Anthony} />
           <TeamH2>Anthony Nakvosas</TeamH2>
           <TeamP>Recruiting Manager</TeamP>
         </TeamCard>
-        <TeamCard>
-          <TeamIcon src={Andrea} />
-          <TeamH2>Andrea Santilli</TeamH2>
-          <TeamP>Recruiting Manager</TeamP>
-        </TeamCard>
-        <TeamCard>
-          <TeamIcon src={Eric} />
-          <TeamH2>Eric Cox</TeamH2>
-          <TeamP>Recruiting Manager</TeamP>
-        </TeamCard>
+        </a>
+        <a href='https://linkedin.com/in/colleen-fitzgerald-prendeville-a2a1b683' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Colleen} />
           <TeamH2>Colleen Prendeville</TeamH2>
-          <TeamP>Recruiting Manager</TeamP>
+          <TeamP>Business Development Manager</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/kariecollins' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Karie} />
           <TeamH2>Karie Collins</TeamH2>
           <TeamP>Recruiting Manager</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://linkedin.com/in/ben-koczab-2924a627' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
-          <TeamIcon src={Matt} />
-          <TeamH2>Matt Gorsuch</TeamH2>
-          <TeamP>Business Development Manager</TeamP>
-        </TeamCard>
-        <TeamCard>
-          <TeamIcon src={Katie} />
-          <TeamH2>Katie Windhurst</TeamH2>
+          <TeamIcon src={Ben} />
+          <TeamH2>Ben Koczab</TeamH2>
           <TeamP>Recruiting Manager</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/acacia-towers/' target='_blank' style={{ textDecoration: 'none' }}>
+        <TeamCard>
+          <TeamIcon src={Acacia} />
+          <TeamH2>Acacia Towers</TeamH2>
+          <TeamP>Recruiting Manager</TeamP>
+        </TeamCard>
+        </a>
+        <a href='https://linkedin.com/in/stacy-f-164592221' target='_blank' style={{ textDecoration: 'none' }}>
+        <TeamCard>
+          <TeamIcon src={Stacy} />
+          <TeamH2>Stacy F</TeamH2>
+          <TeamP>Recruiting Manager</TeamP>
+        </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/sarah-fuller-401822168' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Sarah} />
           <TeamH2>Sarah Fuller</TeamH2>
           <TeamP>Office Manager</TeamP>
         </TeamCard>
+        </a>
+        <a href='https://www.linkedin.com/in/annette-metcalf-6814943' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Annette} />
           <TeamH2>Annette Metcalf</TeamH2>
           <TeamP>Administrative Assisstant</TeamP>
         </TeamCard>
+        </a>
       </TeamScroll>
     </TeamContainer>
   );

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+
+
 export const TeamContainer = styled.div`
     border-radius: 50px;
     margin: 0 50px;
@@ -7,26 +9,24 @@ export const TeamContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-`
+    justify-content: center; /* Center the content vertically */
+`;
 
 export const TeamWrapper = styled.div`
-    max-width: 1600px;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
-    align-items: center;
-    padding: 0 50px;
-
-`
+    justify-content: center; /* Center the content horizontally */
+`;
 
 export const TeamScroll = styled.div`
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
-  max-width: 1600px;
-  width: 100%;
-  height: 100%;
-`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1600px;
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center; /* Center the grid horizontally */
+`;
 
 export const TeamCard = styled.div`
     display: flex;
@@ -34,17 +34,24 @@ export const TeamCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    width: 300px;
+    width: 350px;
     padding: 30px;
-    transition: all 0.2 ease-in-out;
-
+    margin: 10px;
+    transition: transform 0.4s ease-in-out;
 
     &:hover{
-        transform: scale(1.02);
-        transition: all 0.2 ease-in-out;
+        transform: scale(1.05);
         cursor: pointer;
     }
-`
+
+    @media screen and (max-width: 480px) {
+        width: 100%;
+        max-width: 300px; /* Adjust as needed */
+    }
+`;
+
+
+
 
 export const TeamIcon = styled.img`
     height: 160px;

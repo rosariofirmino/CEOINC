@@ -33,7 +33,7 @@ const ImgSlider = (props) => {
     <>
       <div className="img-slider">
         <BsChevronLeft onClick={handleNext} color='#3EC2F3' className="img-slider--icon" size={40} />
-        <img src={imgArr[currentIndex]} key={currentIndex} alt="" className="img-slider--image fade" />
+        <img loading="lazy" src={imgArr[currentIndex]} key={currentIndex} alt="" className="img-slider--image fade" />
         <BsChevronRight onClick={handlePrev} color='#3EC2F3' className="img-slider--icon" size={40} />
       </div>
     </>

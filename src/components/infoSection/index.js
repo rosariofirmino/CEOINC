@@ -1,5 +1,5 @@
 import imag from '../../images/teamImages/1x/Asset 1.png'
-import img1 from '../../images/spotlight1.png'
+import img1 from '../../images/Group 7.png'
 import {Button} from '../button'
 
 
@@ -42,11 +42,11 @@ const InfoSection = ({isimg, short,slides1, slides,lightBg, id, imgStart, topLin
                 <Subtitle darkText={darkText} script={script} big={big} short={short}>
                   {description}
                 </Subtitle>
-                <ButtonEx href='https://ceoinc.com/career-portal/#/jobs'>See our positions</ButtonEx>
+                <ButtonEx href='https://career.ceoinc.com/#/jobs'>See our positions</ButtonEx>
               </TextWrapper>
             </Column1>
             <Column2>
-              {isimg && <Img1 src={img1} alt=''/>}
+              {isimg && <Img1 loading="lazy" src={img1} alt=''/>}
               {!isimg && <ImgSlider imgArr={slides.map(slide => slide.image)} />}
             </Column2>
           </InfoRow>
