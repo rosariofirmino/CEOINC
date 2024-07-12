@@ -70,13 +70,6 @@ const Team = () => {
           <TeamP>Recruiting Manager</TeamP>
         </TeamCard>
         </a>
-        <a href='https://linkedin.com/in/colleen-fitzgerald-prendeville-a2a1b683' target='_blank' style={{ textDecoration: 'none' }}>
-        <TeamCard>
-          <TeamIcon src={Colleen} />
-          <TeamH2>Colleen Prendeville</TeamH2>
-          <TeamP>Business Development Manager</TeamP>
-        </TeamCard>
-        </a>
         <a href='https://www.linkedin.com/in/kariecollins' target='_blank' style={{ textDecoration: 'none' }}>
         <TeamCard>
           <TeamIcon src={Karie} />
